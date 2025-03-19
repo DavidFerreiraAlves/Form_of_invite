@@ -33,3 +33,44 @@ input, textarea, select {
 }
 
 
+/*checkbox-tipo do local*/
+
+.checkbox-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    & [type="checkbox"] {
+        all: unset;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        cursor: pointer;
+        inset: 0;
+        
+       
+       
+    } 
+
+    
+
+    .checkbox-image {
+        flex: 0 0 1.5rem;
+        height: 4rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image: url(/assets/images/icons/Box-presencial-set.svg);
+    }
+
+    &:hover, &:focus-within {
+        .checkbox-image {
+            background-image: url(/assets/images/icons/Box-presencial-set.svg);
+        }
+    }
+
+    &:has(:checked) .checkbox-image {
+        background-image: url(/assets/images/icons/Box-online-set.svg);
+    }
+}
