@@ -36,11 +36,50 @@
 
         <main>
             <div class="main-container">
+
                 <h1>Crie seu convite</h1>
                 <img class="icons" src="assets/images/icons/calendar.svg" alt="">
                 <h2 class="inline-title">Sobre o evento</h2>
                 
             </div>
+            <form method="post" enctype="multipart/form-data">
+                <fieldset class="party-info">
+                    
+
+                    <div class="input-wrapper">
+                        <label   for="eventname">Título</label>
+                       <input id="eventname" name="eventname" type="text" placeholder="Nome do evento"> 
+
+                    </div>
+
+                    <div class="double-container">
+                        <div class="input-wrapper-double">
+                            <label  for="datestart">Início</label>
+                            <input id="datestart" name="datestart" type="datetime-local" lang="pt-br">
+                        </div>
+
+                        <div class="input-wrapper-double">
+                            <label for="dateend">Fim</label>
+                            <input id="dateend" name="dateend" type="datetime-local" lang="pt-br">
+                        </div>
+                    </div>
+
+                    <div class="double-container">
+                        <div class="input-wrapper-double">
+                            <!--Continuar aqui daqui fazer presencial ou online check-->
+                                
+                                
+                        </div>
+
+                        <div class="input-wrapper-double">
+                            <label for="local">Local</label>
+                            <input id="local" name="local" type="text" placeholder="Link ou endereço">
+                        </div>
+                    </div>
+                    
+                </fieldset>
+
+            </form>
         </main>
       
         

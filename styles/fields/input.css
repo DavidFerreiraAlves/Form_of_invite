@@ -1,0 +1,35 @@
+
+
+input, textarea, select {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 2px solid transparent;
+    outline: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    font: var(--body-md);
+    padding: .75rem 1rem;
+}
+
+.double-container {
+    display: flex;
+    gap: 3rem; /* Espaço entre os elementos */
+    justify-content: space-between; /* Distribui os elementos */
+    align-items: center; /* Alinha verticalmente */
+    
+}
+
+.input-wrapper-double {
+    flex: 1; /* Faz com que ambos ocupem a mesma largura */
+    min-width: 150px; /* Evita que fiquem pequenos demais */
+    
+    
+    
+}
+
+#datestart, #dateend {
+    text-transform: uppercase;
+}
+
+

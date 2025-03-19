@@ -52,9 +52,9 @@
 --heading-md: 700 1.75rem var(--font-baloo-2);
 --heading-sm: 700 1.125rem var(--font-baloo-2);
 
---body-md: 400 1rem var(--font-open-sans);
---body-sm: 400 .875rem  var(--font-open-sans);
---body-xs: 400 .75rem var(--font-open-sans)
+--body-md: 400 1rem var(--font-open-sans); /*16px*/
+--body-sm: 400 .875rem  var(--font-open-sans); /*14px*/
+--body-xs: 400 .75rem var(--font-open-sans); /*12px*/
 
 }
 
