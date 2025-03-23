@@ -24,3 +24,8 @@ label {
     margin-top: 1rem;
     margin-bottom: .75rem;
 }
+
+legend {
+    font: var(--body-sm);
+    color: var(--text-body-color);
+}
