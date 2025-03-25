@@ -68,3 +68,8 @@ h1 {
     font: var(--heading-md);
     color: var(--text-heading-color);
 }
+
+h2 {
+    font: var(--body-sm);
+    color: var(--text-body-color);
+}
