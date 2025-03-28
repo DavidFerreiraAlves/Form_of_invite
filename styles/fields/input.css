@@ -117,8 +117,65 @@ textarea {
 /* Quando o input estiver selecionado, aumenta o tamanho */
 .color-option input:checked + span {
     /* transform: scale(1.2);  */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border: 3px solid var(--brand-light);
+    border: 2.5px solid var(--brand-light);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
     
      
 }
+
+.template-span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font:--body-sm;
+    color: var(--text-body-color);
+}
+
+
+/* Define a área do grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));  /*Responsivo */
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Define os itens do grid */
+.grid-item {
+    text-align: center;
+}
+
+/* Remove aparência padrão do input */
+.grid-item input {
+    display: none;
+}
+
+/* Estiliza a imagem */
+.no-selected {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+    cursor: pointer;
+    border: 3px solid transparent; /* Define a borda invisível para evitar "pulo" */
+}
+
+/* Nome do tema */
+
+.template-customization label span {
+    position: absolute;
+    bottom: 20px;
+    left: -10px;
+    width: 100%;
+    text-align: center;} 
+
+/* Quando um template for selecionado, adiciona a borda azul */
+.grid-item input:checked + .no-selected {
+    border: 3px solid var(--brand-light); /* Azul */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4); /* Efeito sutil */
+}
+
