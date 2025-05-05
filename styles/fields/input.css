@@ -338,3 +338,20 @@ strong {
     background-image: url(/assets/images/icons/checkterms.svg);
 }
 
+#ticket-generator {
+    display: flex;
+    justify-content: right;
+    
+    & button {
+        width: 180px;
+        height: 50px;
+        border-radius: 12px;
+        background-color: var(--brand-mid);
+        
+        &:hover, &:focus-within {
+            cursor: pointer;
+        }
+    }
+  
+}
+
