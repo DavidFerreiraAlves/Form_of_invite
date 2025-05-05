@@ -160,7 +160,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-0" name="template-selected">
                                 <img src="assets/images/template/template-image-0.svg" class="no-selected">
                                 <span class="template-span">Aniversário</span>
                             </label>
@@ -168,7 +168,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-1" name="template-selected">
                                 <img src="assets/images/template/template-image-1.svg" class="no-selected">
                                 <span class="template-span">Infantil</span>
                             </label>
@@ -176,7 +176,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-2" name="template-selected">
                                 <img src="assets/images/template/template-image-2.svg" class="no-selected">
                                 <span class="template-span">Formatura</span>
                             </label>
@@ -184,7 +184,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-3" name="template-selected">
                                 <img src="assets/images/template/template-image-3.svg" class="no-selected">
                                 <span class="template-span">Casamento</span>
                             </label>
@@ -192,7 +192,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-4" name="template-selected">
                                 <img src="assets/images/template/template-image-4.svg" class="no-selected">
                                 <span class="template-span">Chá de bebê</span>
                             </label>
@@ -200,7 +200,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-5" name="template-selected">
                                 <img src="assets/images/template/template-image-5.svg" class="no-selected">
                                 <span class="template-span">Chá de panela</span>
                             </label>
@@ -208,7 +208,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-6" name="template-selected">
                                 <img src="assets/images/template/template-image-6.svg" class="no-selected">
                                 <span class="template-span">Carnaval</span>
                             </label>
@@ -216,7 +216,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-7" name="template-selected">
                                 <img src="assets/images/template/template-image-7.svg" class="no-selected">
                                 <span class="template-span">Páscoa</span>
                             </label>
@@ -224,7 +224,7 @@
 
                         <div class="grid-item">
                             <label>
-                                <input type="radio" name="template-selected">
+                                <input type="radio" id="radio-8" name="template-selected">
                                 <img src="assets/images/template/template-image-8.svg" class="no-selected">
                                 <span class="template-span">São João</span>
                             </label>
@@ -232,7 +232,7 @@
 
                         <div class="grid-item">
                              <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-9" name="template-selected">
                                 <img src="assets/images/template/template-image-9.svg" class="no-selected">
                                 <span class="template-span">Halloween</span>
                             </label>
@@ -240,7 +240,7 @@
 
                         <div class="grid-item" >
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-10" name="template-selected">
                                 <img src="assets/images/template/template-image-10.svg" class="no-selected">
                                 <span class="template-span">Natal</span>
                             </label>
@@ -248,7 +248,7 @@
 
                         <div class="grid-item" >
                             <label>
-                                <input  type="radio" name="template-selected">
+                                <input  type="radio" id="radio-11" name="template-selected">
                                 <img src="assets/images/template/template-image-11.svg" class="no-selected">
                                 <span class="template-span">Outro</span>
                             </label>
@@ -260,15 +260,72 @@
                 <fieldset id="checkbox-dark-light" class="light-dark-mode">
                     <div class="double-container checkbox-wrapper">
                         <div class="input-wrapper-double">
-                                <label for="estilo">Estilo</label>
+                                <label for="checkbox-dark-light">Estilo</label>
                                 <div class="checkbox-dark-light"></div>
-                                <input id="estilo" name="tipo" type="checkbox">
+                                <input id="checkbox-dark-light" name="dark-light-mode" type="checkbox">
                         </div>
 
                         <div class="input-wrapper-double">
-                            <label for="upload">Foto de capa</label>
-                            <input id="upload" name="upload" type="file">
+                                <!-- Input escondido -->
+                                 <span class="input-label-upload">Foto de Capa</span>
+                                <input type="file" id="file-upload" class="file-input" accept="image/*">
+                            
+                                <!-- Label personalizada -->
+                                <label for="file-upload" class="custom-file-label">
+                                    <img src="assets/images/icons/button-upload.svg" alt="Upload" class="upload-image">
+                                    <span>Selecionar</span>
+                                </label>
                         </div>
+                </fieldset>
+
+                <fieldset class="contact">
+
+                    <div class="main-container">
+                        <img class="icons" src="assets/images/icons/contact.svg" alt="">
+                        <h2 class="inline-title">Dados para contato</h2>
+                    </div>  
+
+                    <div class="input-wrapper">
+                        <label   for="eventname">Nome</label>
+                       <input id="yourname" name="yourname" type="text" placeholder="Nome completo"> 
+                    </div>
+
+                    <div class="double-container">
+                        <div class="input-wrapper">
+                            <label   for="eventname">E-mail</label>
+                           <input id="emal" name="email" type="email" placeholder="exemplo@email.com">
+                        </div>
+                        <div class="input-wrapper">
+                            <label   for="eventname">Telefone</label>
+                           <input id="phonenumber" name="phonenumber" type="tel" placeholder="(00) 00000-0000" oninput="mascaraTelefone(this)">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="terms-and-conditions">
+
+                    
+
+                    <div class="input-wrapper-0">     
+                        <div class="double-terms-container">
+                            <input id="terms-and-conditions-0" name="terms-and-conditions-0" type="checkbox">
+                            <label for="terms-and-conditions-0">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+                        </div>
+                    </div>
+                    <div class="input-wrapper-1">     
+                       <div class="double-terms-container">
+                           <input id="terms-and-conditions-1" name="terms-and-conditions-1" type="checkbox">
+                           <label for="terms-and-conditions-1">Aceito receber atualizações e promoções por e-mail</label>
+                       </div>
+                    </div>
+                    <div class="input-wrapper-2">     
+                        <div class="double-terms-container">
+                            <input id="terms-and-conditions-2" name="terms-and-conditions-2" type="checkbox">
+                            <label for="terms-and-conditions-2">Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+                    </div>
+
                 </fieldset>
 
             </form>

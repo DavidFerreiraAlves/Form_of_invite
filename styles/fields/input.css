@@ -196,16 +196,145 @@ textarea {
     background-image: url(/assets/images/icons/dark-mode.svg);
 }
 
-&:hover, &:focus-within {
+    &:hover, &:focus-within {
     .checkbox-dark-light {
         background-image: url(/assets/images/icons/dark-mode.svg);
     }
 }
 
-&:has(:checked) .checkbox-dark-light {
+    &:has(:checked) .checkbox-dark-light {
     background-image: url(/assets/images/icons/light-mode.svg);
 }
 
+/*---------------------------------------------------------------------------------------------*/
 
 /*Upload de arquivos*/
+
+/* Esconde o input padrão */
+.input-label-upload {
+    font: var(--body-sm);
+    color: var(--text-body-color);
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: .75rem;
+    
+}
+
+.file-input {
+    display: none;
+}
+
+/* Estiliza a label para parecer um botão com imagem */
+.custom-file-label {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    background-color: var(--shape-button);
+    transition: background 0.3s;
+}
+
+/* Estiliza a imagem dentro do label */
+.upload-image {
+    
+    width: 30px;  /* Ajuste o tamanho conforme necessário */
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+/* Muda o fundo ao passar o mouse */
+.custom-file-label:hover {
+    background-color: var(--shape-hover);
+}
+
+#terms-and-conditions-0 {
+    width: 4%;
+}
+
+#terms-and-conditions-1 {
+    width: 4%;
+}
+
+#terms-and-conditions-2 {
+    width: 4%;
+}
+
+.double-terms-container {
+    display: flex;
+    gap: 1rem; /* Espaço entre os elementos */
+    align-items: left; /* Alinha verticalmente */
+    max-height: 35px;
+
+    
+}
+
+.terms-and-conditions { 
+    margin-top: 48px;
+    padding: 48px;
+    border-top: solid 1px var(--input-placeholder);
+
+}
+
+strong {
+    text-decoration: underline;
+    color: var(--brand-light);
+}
+
+.input-wrapper-0:hover,
+.input-wrapper-0:focus-within {
+    #terms-and-conditions-0 {
+        background-image: url(/assets/images/icons/checkterms.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.input-wrapper-0 input:checked + #terms-and-conditions-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(/assets/images/icons/checkterms.svg);
+}
+
+.input-wrapper-1:hover,
+.input-wrapper-1:focus-within {
+    #terms-and-conditions-1 {
+        background-image: url(/assets/images/icons/checkterms.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.input-wrapper-1 input:checked + #terms-and-conditions-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(/assets/images/icons/checkterms.svg);
+}
+
+.input-wrapper-2:hover,
+.input-wrapper-2:focus-within {
+    #terms-and-conditions-2 {
+        background-image: url(/assets/images/icons/checkterms.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.input-wrapper-2 input:checked + #terms-and-conditions-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(/assets/images/icons/checkterms.svg);
+}
 
