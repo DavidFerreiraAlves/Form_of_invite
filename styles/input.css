@@ -58,17 +58,17 @@ input, textarea, select {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        background-image: url(../.././assets/images/icons/Box-presencial-set.svg);
+        background-image: url(../.././/assets/images/icons/Box-presencial-set.svg);
     }
 
     &:hover, &:focus-within {
         .checkbox-image {
-            background-image: url(../.././assets/images/icons/Box-presencial-set.svg);
+            background-image: url(../.././/assets/images/icons/Box-presencial-set.svg);
         }
     }
 
     &:has(:checked) .checkbox-image {
-        background-image: url(../.././assets/images/icons/Box-online-set.svg);
+        background-image: url(../.././/assets/images/icons/Box-online-set.svg);
     }
 }
 
@@ -193,17 +193,17 @@ textarea {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
-    background-image: url(/.././assets/images/icons/dark-mode.svg);
+    background-image: url(/.././/assets/images/icons/dark-mode.svg);
 }
 
     &:hover, &:focus-within {
     .checkbox-dark-light {
-        background-image: url(/.././assets/images/icons/dark-mode.svg);
+        background-image: url(/.././/assets/images/icons/dark-mode.svg);
     }
 }
 
     &:has(:checked) .checkbox-dark-light {
-    background-image: url(/.././assets/images/icons/light-mode.svg);
+    background-image: url(/.././/assets/images/icons/light-mode.svg);
 }
 
 /*---------------------------------------------------------------------------------------------*/
@@ -290,7 +290,7 @@ strong {
 .input-wrapper-0:hover,
 .input-wrapper-0:focus-within {
     #terms-and-conditions-0 {
-        background-image: url(/.././assets/images/icons/checkterms.svg);
+        background-image: url(/.././/assets/images/icons/checkterms.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -301,13 +301,13 @@ strong {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url(/.././assets/images/icons/checkterms.svg);
+    background-image: url(/.././/assets/images/icons/checkterms.svg);
 }
 
 .input-wrapper-1:hover,
 .input-wrapper-1:focus-within {
     #terms-and-conditions-1 {
-        background-image: url(/.././assets/images/icons/checkterms.svg);
+        background-image: url(/.././/assets/images/icons/checkterms.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -318,13 +318,13 @@ strong {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url(/.././assets/images/icons/checkterms.svg);
+    background-image: url(/.././/assets/images/icons/checkterms.svg);
 }
 
 .input-wrapper-2:hover,
 .input-wrapper-2:focus-within {
     #terms-and-conditions-2 {
-        background-image: url(/.././assets/images/icons/checkterms.svg);
+        background-image: url(/.././/assets/images/icons/checkterms.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -335,7 +335,7 @@ strong {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url(/.././assets/images/icons/checkterms.svg);
+    background-image: url(/.././/assets/images/icons/checkterms.svg);
 }
 
 #ticket-generator {
